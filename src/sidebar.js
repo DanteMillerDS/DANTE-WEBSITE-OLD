@@ -46,7 +46,7 @@ const Sidebar = () => {
           <CDBSidebarMenu>
             
             <NavLink exact to="/aboutme" activeClassName="activeClicked">
-              <CDBSidebarMenuItem > 
+              <CDBSidebarMenuItem className = "aboutmetab"> 
                 <BsFillPersonFill /> About Me
               </CDBSidebarMenuItem>
             </NavLink>

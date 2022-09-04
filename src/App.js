@@ -7,6 +7,8 @@ import Resume from './Resume';
 import AboutMe from './AboutMe';
 import { AiFillLinkedin, AiOutlineMail,AiOutlineTwitter} from "react-icons/ai";
 import { GoMarkGithub } from "react-icons/go";
+import Topbar from './topbar';
+
 function App() {
   return (
     <Router>
@@ -18,6 +20,7 @@ function App() {
       backgroundSize: 'cover',
       backgroundSize: "82%"
      }}>
+    <Topbar />
     <Sidebar />
     <Routes>
           <Route path='/' />
