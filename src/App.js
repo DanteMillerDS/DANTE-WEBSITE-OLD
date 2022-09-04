@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Sidebar from './sidebar';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import image from './image.jpeg';
+import BackgroundImage from './BackgroundImage.jpeg';
 import Resume from './Resume';
 import AboutMe from './AboutMe';
 import { AiFillLinkedin, AiOutlineMail,AiOutlineTwitter} from "react-icons/ai";
@@ -12,7 +12,7 @@ function App() {
     <Router>
       
     <div className="App" id="bg" style={{ 
-      backgroundImage: `url(${image})`,
+      backgroundImage: `url(${BackgroundImage})`,
       backgroundRepeat: 'no-repeat',
       backgroundPosition: 'center',
       backgroundSize: 'cover',

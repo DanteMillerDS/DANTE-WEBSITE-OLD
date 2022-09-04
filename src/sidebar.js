@@ -10,6 +10,8 @@ import {
 import { NavLink } from 'react-router-dom';
 import { AiFillCalculator } from "react-icons/ai";
 import {BsFillPersonFill} from "react-icons/bs";
+import ReactRoundedImage from "react-rounded-image";
+import FaceImage from './FaceImage.jpeg';
 
 const Sidebar = () => {
   return (
@@ -17,7 +19,14 @@ const Sidebar = () => {
       <CDBSidebar textColor="#fff" backgroundColor="#333">
         <CDBSidebarHeader>
 
-          circle with photo
+        <div style={{ display: "flex" }}>
+        <ReactRoundedImage image={FaceImage} roundedSize="0" imageWidth="110" imageHeight="110" />
+      
+      
+      </div>
+
+
+
           <p>
             Dante Miller
           </p>
