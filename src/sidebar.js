@@ -16,8 +16,8 @@ import './sidebar.css'
 
 const Sidebar = () => {
   return (
-    <div style={{ display: 'flex', height: '100vh', overflow: 'scroll initial' }}>
-      <CDBSidebar textColor="#fff" backgroundColor="#333">
+    <div style={{ display: 'flex', height: '100vh', width: '20vw', overflow: 'scroll initial' }}>
+      <CDBSidebar textColor="#fff" backgroundColor="#1A1A1A">
         <CDBSidebarHeader>
         <div className="image-position">
         <ReactRoundedImage image={FaceImage} 
@@ -32,13 +32,13 @@ const Sidebar = () => {
     
 
 
-          <p>
+          <div class = "name">
             Dante Miller
-          </p>
+          </div>
 
-          <p>
+          <div class = "intro">
           Aspiring Machine Learning Engineer | CS PhD Student @ Rice University
-          </p>
+          </div>
         
         </CDBSidebarHeader>
 

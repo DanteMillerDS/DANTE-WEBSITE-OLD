@@ -3,6 +3,22 @@
     justify-content: left;
     width: 100%;
     margin-top: 4%;
-    margin-left: 9%;
+    margin-left: 29%;
     height: auto;
+  }
+
+  .name{
+    margin-top: 4%;
+    color: #5A5A5A;
+    font-size: 25px;
+    white-space: pre-line;
+    text-align: center;
+  }
+
+  .intro{
+    margin-top: 0%;
+    color: #888888;
+    font-size: 12px;
+    white-space: pre-line;
+    text-align: center;
   }
