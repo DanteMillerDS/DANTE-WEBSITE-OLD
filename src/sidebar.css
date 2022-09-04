@@ -15,6 +15,10 @@
     text-align: center;
   }
 
+  .name:hover {
+    color: #E6E6E6;
+  }
+
   .intro{
     margin-top: 0%;
     color: #888888;
@@ -23,11 +27,20 @@
     text-align: center;
   }
 
-  .aboutmetab{
+  .intro:hover{
+    color: #E6E6E6;
+  }
+
+  .aboutmetab,.resumetab{
     margin-top: 0%;
     color: #888888;
     font-size: 15px;
     white-space: pre-line;
     text-align: center;
   }
+
+  .aboutmetab:hover,.resumetab:hover{
+    color: #E6E6E6;
+  }
+
 

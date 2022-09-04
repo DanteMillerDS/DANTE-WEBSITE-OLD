@@ -13,10 +13,13 @@ import {BsFillPersonFill} from "react-icons/bs";
 import ReactRoundedImage from "react-rounded-image";
 import FaceImage from './FaceImage.jpeg';
 import './sidebar.css'
+import {FaBookOpen} from "react-icons/fa";
+import { AiFillLinkedin, AiOutlineMail,AiOutlineTwitter} from "react-icons/ai";
+import { GoMarkGithub } from "react-icons/go";
 
 const Sidebar = () => {
   return (
-    <div style={{ display: 'flex', height: '100vh', width: '20vw', overflow: 'scroll initial' }}>
+    <div className='sideBar'  style={{ position:'fixed', height: "100%", bottom:"0%", zIndex:"2"}}>
       <CDBSidebar textColor="#fff" backgroundColor="#1A1A1A">
         <CDBSidebarHeader>
         <div className="image-position">
@@ -50,13 +53,15 @@ const Sidebar = () => {
                 <BsFillPersonFill /> About Me
               </CDBSidebarMenuItem>
             </NavLink>
+            <NavLink exact to="/resume" activeClassName="activeClicked">
+              <CDBSidebarMenuItem className = "resumetab">
+                <FaBookOpen /> Resume
+                </CDBSidebarMenuItem>
+            </NavLink>
             <NavLink exact to="/app" activeClassName="activeClicked">
               <CDBSidebarMenuItem>
                 <AiFillCalculator /> Calculator
               </CDBSidebarMenuItem>
-            </NavLink>
-            <NavLink exact to="/resume" activeClassName="activeClicked">
-              <CDBSidebarMenuItem icon="chart-line">Resume</CDBSidebarMenuItem>
             </NavLink>
 
             <NavLink exact to="/contactinformation" target="_blank" activeClassName="activeClicked">
@@ -64,7 +69,12 @@ const Sidebar = () => {
             </NavLink>
           </CDBSidebarMenu>
         </CDBSidebarContent>
-
+        <div className = "links">
+    <GoMarkGithub />
+    <AiFillLinkedin />
+    <AiOutlineTwitter />
+    <AiOutlineMail />
+    </div>
         <CDBSidebarFooter style={{ textAlign: 'center' }}>
           <div
             style={{

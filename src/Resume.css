@@ -1,18 +1,15 @@
-.aboutme {
+.resume{
     position: relative;
     text-align: left;
     padding-left:300px;
-    font-size: 1.0vw;
+    font-size: 1.2vw;
     top: 15%;
     overflow: auto;
     color: rgb(175, 175, 175);
-    margin-bottom: -10%;
-    width: 65%;
-  }
-
-  .title{
+    margin-bottom: -10%
+}
+.title{
     font-size: 2vw;
     padding-bottom: 20px;
   }
-
 
