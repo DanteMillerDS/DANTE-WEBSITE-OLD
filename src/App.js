@@ -5,7 +5,8 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import image from './image.jpeg';
 import Resume from './Resume';
 import AboutMe from './AboutMe';
-
+import { AiFillLinkedin, AiOutlineMail,AiOutlineTwitter} from "react-icons/ai";
+import { GoMarkGithub } from "react-icons/go";
 function App() {
   return (
     <Router>
@@ -23,8 +24,12 @@ function App() {
           <Route path='/aboutme' element={<AboutMe/>} />
           <Route path='/resume' element={<Resume/>} />
     </Routes>
+    
     </div>
-
+    <GoMarkGithub />
+    <AiFillLinkedin />
+    <AiOutlineTwitter />
+    <AiOutlineMail />
     </Router>
   );
 }
