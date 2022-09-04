@@ -12,19 +12,24 @@ import { AiFillCalculator } from "react-icons/ai";
 import {BsFillPersonFill} from "react-icons/bs";
 import ReactRoundedImage from "react-rounded-image";
 import FaceImage from './FaceImage.jpeg';
+import './sidebar.css'
 
 const Sidebar = () => {
   return (
     <div style={{ display: 'flex', height: '100vh', overflow: 'scroll initial' }}>
       <CDBSidebar textColor="#fff" backgroundColor="#333">
         <CDBSidebarHeader>
-
-        <div style={{ display: "flex" }}>
-        <ReactRoundedImage image={FaceImage} roundedSize="0" imageWidth="110" imageHeight="110" />
+        <div className="image-position">
+        <ReactRoundedImage image={FaceImage} 
+          roundedSize="4" 
+          imageWidth="90" 
+          imageHeight="90"
+          roundedColor="#5A5A5A"
+          hoverColor="#E6E6E6"
+          />
+        </div>
       
-      
-      </div>
-
+    
 
 
           <p>
