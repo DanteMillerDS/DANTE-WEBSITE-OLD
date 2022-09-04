@@ -14,7 +14,7 @@ import ReactRoundedImage from "react-rounded-image";
 import FaceImage from './FaceImage.jpeg';
 import './sidebar.css'
 import {FaBookOpen} from "react-icons/fa";
-import { AiFillLinkedin, AiOutlineMail,AiOutlineTwitter} from "react-icons/ai";
+import { AiFillLinkedin, AiOutlineMail,AiOutlineTwitter,AiFillContacts} from "react-icons/ai";
 import { GoMarkGithub } from "react-icons/go";
 
 const Sidebar = () => {
@@ -58,23 +58,26 @@ const Sidebar = () => {
                 <FaBookOpen /> Resume
                 </CDBSidebarMenuItem>
             </NavLink>
-            <NavLink exact to="/app" activeClassName="activeClicked">
-              <CDBSidebarMenuItem>
+            <NavLink exact to="/calculator" activeClassName="activeClicked">
+              <CDBSidebarMenuItem className = "calculatortab">
                 <AiFillCalculator /> Calculator
               </CDBSidebarMenuItem>
             </NavLink>
 
-            <NavLink exact to="/contactinformation" target="_blank" activeClassName="activeClicked">
-              <CDBSidebarMenuItem icon="exclamation-circle">Contact</CDBSidebarMenuItem>
+          
+            <NavLink exact to="/contact" activeClassName="activeClicked">
+              <CDBSidebarMenuItem className = "contacttab">
+                <AiFillContacts /> Contact
+              </CDBSidebarMenuItem>
             </NavLink>
           </CDBSidebarMenu>
         </CDBSidebarContent>
-        <div className = "links">
-    <GoMarkGithub />
-    <AiFillLinkedin />
-    <AiOutlineTwitter />
-    <AiOutlineMail />
-    </div>
+    <div className='contactinfo' >
+      <a class="githublink" href='https://github.com/dantemillerds' ><GoMarkGithub /></a>
+      <a class="twitterlink" href='https://twitter.com/dmill666'><AiFillLinkedin /></a>
+      <a class="linkedinlink" href='https://www.linkedin.com/in/dante-miller-1a9396228/'><AiOutlineTwitter /></a>
+      <a class="emailink" href="javascript:location.href = 'mailto:' + ['dm85','rice.edu'].join('@')"><AiOutlineMail /></a> 
+    </div>    
         <CDBSidebarFooter style={{ textAlign: 'center' }}>
           <div
             style={{

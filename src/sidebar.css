@@ -12,7 +12,7 @@
     color: #5A5A5A;
     font-size: 25px;
     white-space: pre-line;
-    text-align: center;
+    text-align: left;
   }
 
   .name:hover {
@@ -24,23 +24,29 @@
     color: #888888;
     font-size: 12px;
     white-space: pre-line;
-    text-align: center;
+    text-align: left;
   }
 
   .intro:hover{
     color: #E6E6E6;
   }
 
-  .aboutmetab,.resumetab{
+  .aboutmetab,.resumetab, .calculatortab, .contacttab{
     margin-top: 0%;
     color: #888888;
     font-size: 15px;
     white-space: pre-line;
+    text-align: left;
+  }
+
+  .aboutmetab:hover,.resumetab:hover, .calculatortab:hover, .contacttab:hover{
+    color: #E6E6E6;
+  }
+
+  .contactinfo{
     text-align: center;
   }
 
-  .aboutmetab:hover,.resumetab:hover{
-    color: #E6E6E6;
-  }
+ 
 
 

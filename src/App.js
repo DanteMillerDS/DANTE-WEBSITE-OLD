@@ -15,8 +15,7 @@ function App() {
       backgroundImage: `url(${BackgroundImage})`,
       backgroundRepeat: 'no-repeat',
       backgroundPosition: 'center',
-      backgroundSize: 'cover',
-      backgroundSize: "100%"
+      backgroundSize: "100%",
      }}>
       <Sidebar />
       <Topbar />
@@ -25,6 +24,7 @@ function App() {
           <Route path='/' />
           <Route path='/aboutme' element={<AboutMe/>} />
           <Route path='/resume' element={<Resume/>} />
+          
     </Routes>
     </div>
 
