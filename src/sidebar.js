@@ -16,7 +16,7 @@ import './sidebar.css'
 import {FaBookOpen} from "react-icons/fa";
 import { AiFillLinkedin, AiOutlineMail,AiOutlineTwitter,AiFillContacts} from "react-icons/ai";
 import { GoMarkGithub } from "react-icons/go";
-
+import { FaHeart } from "react-icons/fa";
 const Sidebar = () => {
   return (
     <div className='sideBar'  style={{ position:'fixed', height: "100%", bottom:"0%", zIndex:"2"}}>
@@ -73,11 +73,17 @@ const Sidebar = () => {
           </CDBSidebarMenu>
         </CDBSidebarContent>
     <div className='contactinfo' >
-      <a class="githublink" href='https://github.com/dantemillerds' ><GoMarkGithub /></a>
-      <a class="twitterlink" href='https://twitter.com/dmill666'><AiFillLinkedin /></a>
-      <a class="linkedinlink" href='https://www.linkedin.com/in/dante-miller-1a9396228/'><AiOutlineTwitter /></a>
-      <a class="emailink" href="javascript:location.href = 'mailto:' + ['dm85','rice.edu'].join('@')"><AiOutlineMail /></a> 
+      <a className="githublink" href='https://github.com/dantemillerds' ><GoMarkGithub /></a>
+      <a className="twitterlink" href='https://twitter.com/dmill666'><AiFillLinkedin /></a>
+      <a className="linkedinlink" href='https://www.linkedin.com/in/dante-miller-1a9396228/'><AiOutlineTwitter /></a>
+      <a className="emailink" href="javascript:location.href = 'mailto:' + ['dm85','rice.edu'].join('@')"><AiOutlineMail /></a> 
     </div>    
+    <span className="createdby">
+      Made with <i className="heart">
+        <FaHeart/>
+      </i> by Dante Miller
+     </span>
+     
         <CDBSidebarFooter style={{ textAlign: 'center' }}>
           <div
             style={{

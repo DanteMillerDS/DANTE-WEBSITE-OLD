@@ -46,6 +46,25 @@
   .contactinfo{
     text-align: center;
   }
+  .githublink, .twitterlink, .linkedinlink, .emailink{
+    color: #888888;
+    padding-left: 10px;
+  }
+  .githublink:hover, .twitterlink:hover, .linkedinlink:hover, .emailink:hover{
+    color: #E6E6E6;
+  }
+  .createdby{
+    margin-top: 4%;
+    color: #E6E6E6;
+    font-size: 12px;
+    white-space: pre-line;
+    text-align: center;
+    margin-bottom: -10%;
+  }
+  
+  .heart{
+    color:rgb(241, 74, 74);
+  }
 
  
 

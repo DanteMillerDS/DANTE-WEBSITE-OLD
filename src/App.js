@@ -6,6 +6,7 @@ import BackgroundImage from './BackgroundImage.jpeg';
 import Resume from './Resume';
 import AboutMe from './AboutMe';
 import Topbar from './topbar';
+import Calculator from './Calculator';
 
 function App() {
   return (
@@ -19,15 +20,16 @@ function App() {
      }}>
       <Sidebar />
       <Topbar />
-    
+      
     <Routes>
           <Route path='/' />
           <Route path='/aboutme' element={<AboutMe/>} />
           <Route path='/resume' element={<Resume/>} />
+          <Route path='/calculator' element={<Calculator/>} />
           
     </Routes>
     </div>
-
+     
     </Router>
   );
 }
