@@ -8,7 +8,7 @@ import {
   CDBSidebarMenuItem,
 } from 'cdbreact';
 import { NavLink } from 'react-router-dom';
-import { AiFillCalculator } from "react-icons/ai";
+import { AiFillProject } from "react-icons/ai";
 import {BsFillPersonFill} from "react-icons/bs";
 import ReactRoundedImage from "react-rounded-image";
 import FaceImage from './FaceImage.jpeg';
@@ -58,9 +58,9 @@ const Sidebar = () => {
                 <FaBookOpen /> Resume
                 </CDBSidebarMenuItem>
             </NavLink>
-            <NavLink exact to="/calculator" activeClassName="activeClicked">
-              <CDBSidebarMenuItem className = "calculatortab">
-                <AiFillCalculator /> Calculator
+            <NavLink exact to="/project" activeClassName="activeClicked">
+              <CDBSidebarMenuItem className = "projecttab">
+                <AiFillProject /> Project
               </CDBSidebarMenuItem>
             </NavLink>
 

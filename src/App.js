@@ -6,7 +6,7 @@ import BackgroundImage from './BackgroundImage.jpeg';
 import Resume from './Resume';
 import AboutMe from './AboutMe';
 import Topbar from './topbar';
-import Calculator from './Calculator';
+import Project from './Project';
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
           <Route path='/' />
           <Route path='/aboutme' element={<AboutMe/>} />
           <Route path='/resume' element={<Resume/>} />
-          <Route path='/calculator' element={<Calculator/>} />
+          <Route path='/project' element={<Project/>} />
           
     </Routes>
     </div>
