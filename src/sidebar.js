@@ -23,6 +23,7 @@ const Sidebar = () => {
 
  
   return (
+    
     <div className='sideBar'  style={{ position:'fixed', height: "100%", bottom:"0%", zIndex:"2"}}>
       <style>
         @import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Darker+Grotesque:wght@600&family=Cutive+Mono&family=Sacramento&display=swap');
