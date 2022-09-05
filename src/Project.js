@@ -2,12 +2,12 @@ import React from 'react';
 import "./Project.css";
 function Project() {
 return(
-  <div class="project">
-    <h1 class="title"> 
+  <div className="project">
+    <h1 className="title"> 
       Projects
     </h1>
-    <p class="text">
-      Currently in progress but this will be where projects that I am working on are stored.
+    <p className="text">
+      Currently in progress but this will be where I will provide information relating to the projects I am currently working on or have finished.
     </p>
   </div>
 

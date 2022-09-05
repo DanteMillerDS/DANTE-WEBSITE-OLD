@@ -19,15 +19,21 @@ import { GoMarkGithub } from "react-icons/go";
 import { FaHeart } from "react-icons/fa";
 const Sidebar = () => {
   return (
+
+
+    
     <div className='sideBar'  style={{ position:'fixed', height: "100%", bottom:"0%", zIndex:"2"}}>
-      <CDBSidebar textColor="#fff" backgroundColor="#1A1A1A">
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Darker+Grotesque:wght@600&family=Cutive+Mono&family=Sacramento&display=swap');
+      </style>
+      <CDBSidebar textColor="#fff" backgroundColor="#1A1A1A" className="DBSsidebar" >
         <CDBSidebarHeader>
         <div className="image-position">
         <ReactRoundedImage image={FaceImage} 
           roundedSize="4" 
           imageWidth="90" 
           imageHeight="90"
-          roundedColor="#5A5A5A"
+          roundedColor="#aeaeae"
           hoverColor="#E6E6E6"
           />
         </div>
@@ -35,11 +41,11 @@ const Sidebar = () => {
     
 
 
-          <div class = "name">
+          <div className = "name">
             Dante Miller
           </div>
 
-          <div class = "intro">
+          <div className = "intro">
           Aspiring Machine Learning Engineer | CS PhD Student @ Rice University
           </div>
         
@@ -48,24 +54,32 @@ const Sidebar = () => {
         <CDBSidebarContent className="sidebar-content">
           <CDBSidebarMenu>
             
-            <NavLink exact to="/aboutme" activeClassName="activeClicked">
-              <CDBSidebarMenuItem className = "aboutmetab"> 
+            <NavLink to="/aboutme" end style={({ isActive }) => ({ color: isActive ? "green" : "blue" })}>
+              <CDBSidebarMenuItem className = "aboutmetab" > 
                 <BsFillPersonFill /> About Me
               </CDBSidebarMenuItem>
             </NavLink>
-            <NavLink exact to="/resume" activeClassName="activeClicked">
+            <NavLink to="/resume" >
               <CDBSidebarMenuItem className = "resumetab">
                 <FaBookOpen /> Resume
                 </CDBSidebarMenuItem>
             </NavLink>
-            <NavLink exact to="/project" activeClassName="activeClicked">
+            <NavLink to="/project" 
+            >
               <CDBSidebarMenuItem className = "projecttab">
-                <AiFillProject /> Project
+                <AiFillProject /> Projects
+              </CDBSidebarMenuItem>
+            </NavLink>
+
+            <NavLink to="/paper" 
+            >
+              <CDBSidebarMenuItem className = "papertab">
+                <AiFillProject /> Papers
               </CDBSidebarMenuItem>
             </NavLink>
 
           
-            <NavLink exact to="/contact" activeClassName="activeClicked">
+            <NavLink to="/contact" >
               <CDBSidebarMenuItem className = "contacttab">
                 <AiFillContacts /> Contact
               </CDBSidebarMenuItem>

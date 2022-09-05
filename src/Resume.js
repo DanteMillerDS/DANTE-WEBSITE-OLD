@@ -3,8 +3,8 @@ import ResumePDF from "./Resume.pdf"
 import "./Resume.css"
 function Resume() {
 return(
-  <div class="resume">
-    <h1 class="title"> 
+  <div className="resume">
+    <h1 className="title"> 
       Resume
     </h1>
     <object height="840" data={ResumePDF} type="application/pdf" width="960">

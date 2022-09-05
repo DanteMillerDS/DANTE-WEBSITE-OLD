@@ -9,10 +9,11 @@
 
   .name{
     margin-top: 4%;
-    color: #5A5A5A;
+    color: #aeaeae;
     font-size: 25px;
     white-space: pre-line;
     text-align: left;
+    font-family: 'Darker Grotesque', sans-serif;
   }
 
   .name:hover {
@@ -25,23 +26,29 @@
     font-size: 12px;
     white-space: pre-line;
     text-align: left;
+    font-family: 'Coming Soon', cursive;
   }
 
   .intro:hover{
     color: #E6E6E6;
   }
 
-  .aboutmetab,.resumetab, .projecttab, .contacttab{
+  .aboutmetab,.resumetab, .projecttab, .contacttab, .papertab{
     margin-top: 0%;
     color: #888888;
     font-size: 15px;
     white-space: pre-line;
     text-align: left;
+    font-family: 'Cutive Mono', monospace;
   }
 
-  .aboutmetab:hover,.resumetab:hover, .projecttab:hover, .contacttab:hover{
+  .aboutmetab:hover,.resumetab:hover, .projecttab:hover, .contacttab:hover, .papertab:hover{
     color: #E6E6E6;
   }
+
+
+  
+  
 
   .contactinfo{
     text-align: center;
@@ -60,12 +67,18 @@
     white-space: pre-line;
     text-align: center;
     margin-bottom: -10%;
+    font-family: 'Sacramento', cursive;
   }
   
   .heart{
     color:rgb(241, 74, 74);
   }
 
+  .DBSsidebar{
+    opacity:.9;
+  }
+
+  
  
 
 

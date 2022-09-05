@@ -8,9 +8,11 @@ import './topbar.css'
 export default function Topbar() {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar  position="fixed" style={{ background: 'rgb(95, 95, 124', width:"140%",height:"6%", zIndex:"1"}}>
-        <Toolbar>
+      <AppBar className="appBar"  position="fixed" style={{ background: 'rgb(42, 48, 88)', width:"140%",height:"6%", zIndex:"1"}}>
+        <span>
           
+        </span>
+        <Toolbar>
           
         </Toolbar>
       </AppBar>

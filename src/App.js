@@ -7,7 +7,7 @@ import Resume from './Resume';
 import AboutMe from './AboutMe';
 import Topbar from './topbar';
 import Project from './Project';
-
+import Paper from './Paper';
 function App() {
   return (
     <Router>
@@ -18,6 +18,9 @@ function App() {
       backgroundPosition: 'center',
       backgroundSize: "100%",
      }}>
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+      </style>
       <Sidebar />
       <Topbar />
       
@@ -26,7 +29,7 @@ function App() {
           <Route path='/aboutme' element={<AboutMe/>} />
           <Route path='/resume' element={<Resume/>} />
           <Route path='/project' element={<Project/>} />
-          
+          <Route path='/paper' element={<Paper/>} />
     </Routes>
     </div>
      

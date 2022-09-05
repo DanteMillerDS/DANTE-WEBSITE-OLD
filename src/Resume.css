@@ -6,7 +6,8 @@
     top: 15%;
     overflow: auto;
     color: rgb(175, 175, 175);
-    margin-bottom: -10%
+    margin-bottom: -10%;
+    font-family: 'Crimson Text', serif;
 }
 .title{
     font-size: 2vw;
