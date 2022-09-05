@@ -7,14 +7,14 @@ import Button from '@mui/material/Button';
 import './topbar.css'
 export default function Topbar() {
   return (
+    
     <Box sx={{ flexGrow: 1 }}>
       <AppBar className="appBar"  position="fixed" style={{ background: 'rgb(42, 48, 88)', width:"140%",height:"6%", zIndex:"1"}}>
-        <span>
-          
-        </span>
+     
         <Toolbar>
           
         </Toolbar>
+      
       </AppBar>
     </Box>
   );
