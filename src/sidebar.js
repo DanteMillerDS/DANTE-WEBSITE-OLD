@@ -7,7 +7,7 @@ import {
   CDBSidebarMenu,
   CDBSidebarMenuItem,
 } from 'cdbreact';
-import { NavLink, useMatch, useResolvedPath  } from 'react-router-dom';
+import { NavLink  } from 'react-router-dom';
 import { AiFillProject } from "react-icons/ai";
 import {BsFillPersonFill} from "react-icons/bs";
 import ReactRoundedImage from "react-rounded-image";
@@ -104,6 +104,7 @@ const Sidebar = () => {
       <a className="githublink" href='https://github.com/dantemillerds' ><GoMarkGithub /></a>
       <a className="twitterlink" href='https://twitter.com/dmill666'><AiFillLinkedin /></a>
       <a className="linkedinlink" href='https://www.linkedin.com/in/dante-miller-1a9396228/'><AiOutlineTwitter /></a>
+     
       <a className="emailink" href="javascript:location.href = 'mailto:' + ['dm85','rice.edu'].join('@')"><AiOutlineMail /></a> 
     </div>    
     <span className="createdby">
