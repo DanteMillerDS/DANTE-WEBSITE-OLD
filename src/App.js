@@ -9,6 +9,8 @@ import Topbar from './topbar';
 import Project from './Project';
 import Paper from './Paper';
 import Contact from './Contact';
+import Playbar from './playbar';
+
 function App() {
   
   return (
@@ -21,12 +23,13 @@ function App() {
       backgroundPosition: 'center',
       backgroundSize: "100%",
      }}>
+      
       <style>
         @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
       </style>
       <Sidebar />
       <Topbar />
-      
+      <Playbar/>
     <Routes>
           <Route path='/' />
           <Route path='/aboutme' element={<AboutMe/>} />

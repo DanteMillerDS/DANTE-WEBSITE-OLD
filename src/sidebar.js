@@ -54,24 +54,27 @@ const Sidebar = () => {
         </CDBSidebarHeader>
 
         <CDBSidebarContent className="sidebar-content">
-          <CDBSidebarMenu>
+          <CDBSidebarMenu className="sidebarMenu">
         
             <li>
-            <NavLink to="/aboutme" >
+            <NavLink className={({ isActive }) => 
+                      (isActive ? "link" : "")} to="/aboutme" >
               <CDBSidebarMenuItem className = "aboutmetab"> 
                 <BsFillPersonFill /> About Me
               </CDBSidebarMenuItem>
             </NavLink>
             </li>
             <li>
-            <NavLink  to="/resume" >
+            <NavLink className={({ isActive }) => 
+                      (isActive ? "link" : "")} to="/resume" >
               <CDBSidebarMenuItem  className = "resumetab">
                 <FaBookOpen /> Resume
                 </CDBSidebarMenuItem>
             </NavLink>
             </li>
             <li>
-            <NavLink to="/project" 
+            <NavLink className={({ isActive }) => 
+                      (isActive ? "link" : "")} to="/project" 
             >
               <CDBSidebarMenuItem className = "projecttab">
                 <AiFillProject /> Projects
@@ -79,7 +82,8 @@ const Sidebar = () => {
             </NavLink>
             </li>
             <li>
-            <NavLink to="/paper" 
+            <NavLink className={({ isActive }) => 
+                      (isActive ? "link" : "")} to="/paper" 
             >
               <CDBSidebarMenuItem className = "papertab">
                 <AiFillProject /> Papers
@@ -87,7 +91,8 @@ const Sidebar = () => {
             </NavLink>
             </li>
             <li>
-            <NavLink to="/contact" >
+            <NavLink className={({ isActive }) => 
+                      (isActive ? "link" : "")} to="/contact" >
               <CDBSidebarMenuItem className = "contacttab">
                 <AiFillContacts /> Contact
               </CDBSidebarMenuItem>

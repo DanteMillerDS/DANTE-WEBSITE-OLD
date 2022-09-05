@@ -71,8 +71,11 @@
   }
 
   
-  .DBSsidebar{
-    opacity:.9;
+  .link > .aboutmetab,.link > .resumetab, .link > .projecttab,.link > .papertab,.link > .contacttab{
+    color: #E6E6E6;
+    font-family: 'Cutive Mono', monospace;
   }
+
+ 
 
  

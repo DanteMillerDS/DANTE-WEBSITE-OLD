@@ -1,0 +1,7 @@
+.playbar{
+    overflow: auto;
+    margin-top: auto;
+    position: fixed;
+    bottom: 0%;
+    color:rgba(35, 43, 56, 0.563)
+}
