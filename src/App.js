@@ -8,8 +8,11 @@ import AboutMe from './AboutMe';
 import Topbar from './topbar';
 import Project from './Project';
 import Paper from './Paper';
+import Contact from './Contact';
 function App() {
+  
   return (
+    
     <Router>
       
     <div className="App" id="bg" style={{ 
@@ -30,6 +33,7 @@ function App() {
           <Route path='/resume' element={<Resume/>} />
           <Route path='/project' element={<Project/>} />
           <Route path='/paper' element={<Paper/>} />
+          <Route path='/contact' element={<Contact/>} />
     </Routes>
     </div>
      

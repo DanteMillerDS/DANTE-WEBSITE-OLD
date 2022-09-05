@@ -7,7 +7,7 @@ import {
   CDBSidebarMenu,
   CDBSidebarMenuItem,
 } from 'cdbreact';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useMatch, useResolvedPath  } from 'react-router-dom';
 import { AiFillProject } from "react-icons/ai";
 import {BsFillPersonFill} from "react-icons/bs";
 import ReactRoundedImage from "react-rounded-image";
@@ -17,11 +17,12 @@ import {FaBookOpen} from "react-icons/fa";
 import { AiFillLinkedin, AiOutlineMail,AiOutlineTwitter,AiFillContacts} from "react-icons/ai";
 import { GoMarkGithub } from "react-icons/go";
 import { FaHeart } from "react-icons/fa";
+
 const Sidebar = () => {
+
+
+ 
   return (
-
-
-    
     <div className='sideBar'  style={{ position:'fixed', height: "100%", bottom:"0%", zIndex:"2"}}>
       <style>
         @import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Darker+Grotesque:wght@600&family=Cutive+Mono&family=Sacramento&display=swap');
@@ -53,37 +54,44 @@ const Sidebar = () => {
 
         <CDBSidebarContent className="sidebar-content">
           <CDBSidebarMenu>
-            
-            <NavLink to="/aboutme" end style={({ isActive }) => ({ color: isActive ? "green" : "blue" })}>
-              <CDBSidebarMenuItem className = "aboutmetab" > 
+        
+            <li>
+            <NavLink to="/aboutme" >
+              <CDBSidebarMenuItem className = "aboutmetab"> 
                 <BsFillPersonFill /> About Me
               </CDBSidebarMenuItem>
             </NavLink>
-            <NavLink to="/resume" >
-              <CDBSidebarMenuItem className = "resumetab">
+            </li>
+            <li>
+            <NavLink  to="/resume" >
+              <CDBSidebarMenuItem  className = "resumetab">
                 <FaBookOpen /> Resume
                 </CDBSidebarMenuItem>
             </NavLink>
+            </li>
+            <li>
             <NavLink to="/project" 
             >
               <CDBSidebarMenuItem className = "projecttab">
                 <AiFillProject /> Projects
               </CDBSidebarMenuItem>
             </NavLink>
-
+            </li>
+            <li>
             <NavLink to="/paper" 
             >
               <CDBSidebarMenuItem className = "papertab">
                 <AiFillProject /> Papers
               </CDBSidebarMenuItem>
             </NavLink>
-
-          
+            </li>
+            <li>
             <NavLink to="/contact" >
               <CDBSidebarMenuItem className = "contacttab">
                 <AiFillContacts /> Contact
               </CDBSidebarMenuItem>
             </NavLink>
+            </li>
           </CDBSidebarMenu>
         </CDBSidebarContent>
     <div className='contactinfo' >
