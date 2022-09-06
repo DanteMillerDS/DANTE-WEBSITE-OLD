@@ -9,6 +9,7 @@ import Project from './Project';
 import Paper from './Paper';
 import Contact from './Contact';
 import Playbar from './playbar';
+import { SpotifyNowPlaying } from './SpotifyNowPlaying';
 
 function App() {
   
@@ -18,9 +19,9 @@ function App() {
       
     <div className="App" id="bg" style={{ 
       backgroundImage: `url(${BackgroundImage})`,
-      backgroundRepeat: 'no-repeat',
+      backgroundRepeat: 'repeat',
       backgroundPosition: 'center',
-      backgroundSize: "100%",
+      backgroundSize: "60%",
      }}>
       
       <style>
@@ -29,6 +30,7 @@ function App() {
       <Sidebar />
       <Topbar />
       <Playbar/>
+      <SpotifyNowPlaying/>
     <Routes>
           <Route path='/' />
           <Route path='/aboutme' element={<AboutMe/>} />
