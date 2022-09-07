@@ -58,6 +58,9 @@ export default async function getNowPlayingItem(
     const title = song.item.name;
     console.log(isPlaying);
     console.log(songUrl);
+
+
+    
     if(isPlaying == true){
     
     return {
