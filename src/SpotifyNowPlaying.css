@@ -1,0 +1,26 @@
+.spotifyimage{
+    overflow: auto;
+    margin-top: 20vh;
+    position: fixed;
+    width: 25vh;
+    height: auto;
+}
+
+.spotify {
+    position: relative;
+    text-align: left;
+    padding-left:300px;
+    margin-top: 20vh;
+    font-size: 1.0vw;
+    top: 120%;
+    overflow: auto;
+    color: rgb(175, 175, 175);
+    margin-bottom: -10%;
+    width: 65%;
+    font-family: 'Crimson Text', serif;
+  }
+
+  .title{
+    font-size: 2vw;
+    padding-bottom: 20px;
+  }

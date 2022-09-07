@@ -17,7 +17,7 @@ import {FaBookOpen} from "react-icons/fa";
 import { AiFillLinkedin, AiOutlineMail,AiOutlineTwitter,AiFillContacts} from "react-icons/ai";
 import { GoMarkGithub } from "react-icons/go";
 import { FaHeart } from "react-icons/fa";
-
+import { BsSpotify } from 'react-icons/bs';
 const Sidebar = () => {
 
 
@@ -101,10 +101,10 @@ const Sidebar = () => {
           </CDBSidebarMenu>
         </CDBSidebarContent>
     <div className='contactinfo' >
+      <a className="spotifylink" href="/project/spotify"><BsSpotify /></a> 
       <a className="githublink" href='https://github.com/dantemillerds' ><GoMarkGithub /></a>
       <a className="twitterlink" href='https://twitter.com/dmill666'><AiFillLinkedin /></a>
       <a className="linkedinlink" href='https://www.linkedin.com/in/dante-miller-1a9396228/'><AiOutlineTwitter /></a>
-     
       <a className="emailink" href="javascript:location.href = 'mailto:' + ['dm85','rice.edu'].join('@')"><AiOutlineMail /></a> 
     </div>    
     <span className="createdby">

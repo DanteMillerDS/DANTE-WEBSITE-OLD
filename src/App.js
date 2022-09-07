@@ -30,7 +30,7 @@ function App() {
       <Sidebar />
       <Topbar />
       <Playbar/>
-      <SpotifyNowPlaying/>
+  
     <Routes>
           <Route path='/' />
           <Route path='/aboutme' element={<AboutMe/>} />
@@ -38,6 +38,7 @@ function App() {
           <Route path='/project' element={<Project/>} />
           <Route path='/paper' element={<Paper/>} />
           <Route path='/contact' element={<Contact/>} />
+          <Route path='/project/spotify' element={<SpotifyNowPlaying/>} />
     </Routes>
     </div>
      

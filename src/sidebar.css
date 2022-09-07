@@ -49,11 +49,11 @@
   .contactinfo{
     text-align: center;
   }
-  .githublink, .twitterlink, .linkedinlink, .emailink{
+  .githublink, .twitterlink, .linkedinlink, .emailink, .spotifylink{
     color: #888888;
     padding-left: 10px;
   }
-  .githublink:hover, .twitterlink:hover, .linkedinlink:hover, .emailink:hover{
+  .githublink:hover, .twitterlink:hover, .linkedinlink:hover, .emailink:hover, .spotifylink:hover{
     color: #E6E6E6;
   }
   .createdby{

@@ -1,3 +1,4 @@
+import e from "cors";
 import querystring from "querystring-es3";
 window.Buffer = window.Buffer || require("buffer").Buffer;
 const TOKEN_ENDPOINT = `https://accounts.spotify.com/api/token`;
@@ -6,7 +7,7 @@ const client_id = process.env.REACT_APP_SPOTIFY_CLIENT_ID;
 const client_secret = process.env.REACT_APP_SPOTIFY_CLIENT_SECRET;
 const refresh_token = process.env.REACT_APP_SPOTIFY_REFRESH_TOKEN;
 const code = process.env.REACT_APP_SPOTIFY_CODE;
-
+const previous_artist = "";
 const getAccessToken = async () => {
     const basic = Buffer.from(`${client_id}:${client_secret}`).toString("base64");
     const response = await fetch(TOKEN_ENDPOINT, {
@@ -20,7 +21,7 @@ const getAccessToken = async () => {
             refresh_token,
         }),
     });
-    console.log(response.json())
+  
     return response.json();
 
 };
@@ -31,6 +32,7 @@ export const getNowPlaying = async (client_id, client_secret, refresh_token) => 
         client_secret,
         refresh_token
     );
+
     return fetch(NOW_PLAYING_ENDPOINT, {
         headers: {
             Authorization: `Bearer ${access_token}`,
@@ -49,11 +51,15 @@ export default async function getNowPlayingItem(
     }
     const song = await response.json();
     const albumImageUrl = song.item.album.images[0].url;
+ 
     const artist = song.item.artists.map((_artist) => _artist.name).join(", ");
-   
+
     const isPlaying = song.is_playing;
     const songUrl = song.item.external_urls.spotify;
     const title = song.item.name;
+    console.log(isPlaying);
+    console.log(songUrl);
+    if(isPlaying == true){
     
     return {
         albumImageUrl,
@@ -61,5 +67,7 @@ export default async function getNowPlayingItem(
         isPlaying,
         songUrl,
         title,
-    };
+    }}
+    
+
 }
