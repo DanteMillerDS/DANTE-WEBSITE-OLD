@@ -7,7 +7,8 @@ const client_id = process.env.REACT_APP_SPOTIFY_CLIENT_ID;
 const client_secret = process.env.REACT_APP_SPOTIFY_CLIENT_SECRET;
 const refresh_token = process.env.REACT_APP_SPOTIFY_REFRESH_TOKEN;
 const code = process.env.REACT_APP_SPOTIFY_CODE;
-const previous_artist = "";
+
+console.log(client_id);
 const getAccessToken = async () => {
     const basic = Buffer.from(`${client_id}:${client_secret}`).toString("base64");
     const response = await fetch(TOKEN_ENDPOINT, {
