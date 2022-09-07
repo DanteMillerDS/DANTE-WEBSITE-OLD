@@ -1,4 +1,3 @@
-import e from "cors";
 import querystring from "querystring-es3";
 window.Buffer = window.Buffer || require("buffer").Buffer;
 const TOKEN_ENDPOINT = `https://accounts.spotify.com/api/token`;
@@ -8,7 +7,6 @@ const client_secret = process.env.REACT_APP_SPOTIFY_CLIENT_SECRET;
 const refresh_token = process.env.REACT_APP_SPOTIFY_REFRESH_TOKEN;
 const code = process.env.REACT_APP_SPOTIFY_CODE;
 
-console.log(client_id);
 const getAccessToken = async () => {
     const basic = Buffer.from(`${client_id}:${client_secret}`).toString("base64");
     const response = await fetch(TOKEN_ENDPOINT, {
