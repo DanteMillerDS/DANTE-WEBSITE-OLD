@@ -8,20 +8,16 @@ import {
   CDBSidebarMenuItem,
 } from 'cdbreact';
 import { NavLink  } from 'react-router-dom';
-import { AiFillProject } from "react-icons/ai";
-import {BsFillPersonFill} from "react-icons/bs";
+import {BsFillPersonFill,BsSpotify} from "react-icons/bs";
 import ReactRoundedImage from "react-rounded-image";
 import FaceImage from './FaceImage.jpeg';
 import './sidebar.css'
-import {FaBookOpen} from "react-icons/fa";
-import { AiFillLinkedin, AiOutlineMail,AiOutlineTwitter,AiFillContacts} from "react-icons/ai";
+import {FaBookOpen,FaHeart} from "react-icons/fa";
+import { AiFillLinkedin, AiOutlineMail,AiOutlineTwitter,AiFillContacts, AiFillProject} from "react-icons/ai";
 import { GoMarkGithub } from "react-icons/go";
-import { FaHeart } from "react-icons/fa";
-import { BsSpotify } from 'react-icons/bs';
+
+
 const Sidebar = () => {
-
-
- 
   return (
     
     <div className='sideBar'  style={{ position:'fixed', height: "100%", bottom:"0%", zIndex:"2"}}>

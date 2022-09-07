@@ -1,16 +1,9 @@
-.spotifyimage{
-    overflow: auto;
-    margin-top: 20vh;
-    position: fixed;
-    width: 25vh;
-    height: auto;
-}
 
 .spotify {
     position: relative;
     text-align: left;
     padding-left:300px;
-    margin-top: 20vh;
+    margin-top: 15vh;
     font-size: 1.0vw;
     top: 120%;
     overflow: auto;
@@ -19,8 +12,43 @@
     width: 65%;
     font-family: 'Crimson Text', serif;
   }
+  .spotifytext{
+    font-size: 1.0vw;
+    overflow: auto;
+    position: fixed;
+    bottom: 0px;
+    margin-right: auto;
+    margin-left: auto;
+  
+    z-index: 1;
+    
+  }
+  .slink{
+    font-size: 1.5vw;
+    color: #309a36;
+  }
+  
+  .slink:hover{
+    color: #0dff00;
+  }
+
+
+  
 
   .title{
     font-size: 2vw;
     padding-bottom: 20px;
+  }
+  .spotifyimage{
+    overflow: auto;
+    margin-top: 0vh;
+    width: 25vh;
+    height: auto;
+    text-align:center;
+}
+  
+
+  .spotifyartisttitle{
+    font-size: 3vw;
+    margin-top: 15vh;
   }
