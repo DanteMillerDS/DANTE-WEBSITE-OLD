@@ -22,21 +22,22 @@ export const SpotifyNowPlaying = (props) => {
     return (
         
         <div>
-        <div className="spotify">
-            <h1 className="title"> 
-            Current Spotify Song
-            </h1>
-            
-            <p className="spotifytext">
+        <h1 className="spotifytitle">
+        Current Spotify Song
+        </h1>
+
+
+
+        <div className="artandtitle">
+        <img style={{ zIndex:"1"}} class = "spotifyimage" src={result.albumImageUrl} alt={`${result.title} album art`}/>
+        <h1 className="spotifyartisttitle">{result.artist} by {result.title}</h1>
+        </div>
+
+        <div className="spotifytext" style={{zIndex:"1"}}>
             Check out my spotify playlist <a className="slink" href="https://open.spotify.com/user/7hxmupd8fl2k1ztjtk8jmz9n4"> 
             <BsSpotify />
             </a> 
-            </p>
-        </div>
-        <div className="spotify" >
-            <h1 className="spotifyartisttitle">{result.artist} by {result.title}</h1>
-            <img style={{ zIndex:"1"}} class = "spotifyimage" src={result.albumImageUrl} alt={`${result.title} album art`}/>
-        </div>
+            </div>
         </div>
     )
 };
