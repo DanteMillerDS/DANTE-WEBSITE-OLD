@@ -49,6 +49,7 @@ export default async function getNowPlayingItem(
         return false;
     }
     const song = await response.json();
+    console.log(song);
     const albumImageUrl = song.item.album.images[0].url;
  
     const artist = song.item.artists.map((_artist) => _artist.name).join(", ");

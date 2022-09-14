@@ -38,7 +38,7 @@ function App() {
           <Route path='/project' element={<Project/>} />
           <Route path='/paper' element={<Paper/>} />
           <Route path='/contact' element={<Contact/>} />
-          <Route path='/project/spotify' element={<SpotifyNowPlaying/>} />
+           
     </Routes>
     </div>
      

@@ -7,14 +7,13 @@ const track = {
     title: "",
     albumImageUrl: ""
 }
-
-
 export const SpotifyNowPlaying = (props) => {
     
     const [is_paused, setPaused] = useState(false);
     const [is_active, setActive] = useState(false);
     const [player, setPlayer] = useState(undefined);
     const [result, setResult] = useState({track});
+    const[spotifyTitle,setSpotifyTitle] = useState("Last Played Song");
     useEffect(() => {
  
         Promise.all([
@@ -25,17 +24,21 @@ export const SpotifyNowPlaying = (props) => {
             ),
         ]).then((results) => {
             setResult(results[0]);
+            if(results[0] != false){
+                setSpotifyTitle("Song Currently Playing")
+                console.log(results)
+            }
         });
         
 
 
     }, []);
-    console.log(result)
+
     return (
         
         <div>
         <h1 className="spotifytitle">
-        Current Spotify Song
+        {spotifyTitle}
         </h1>
 
 
