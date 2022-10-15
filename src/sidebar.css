@@ -61,30 +61,7 @@
 
   
 
-  @media screen and (min-width:745px) {
-    .aboutmetab,.resumetab, .projecttab, .contacttab, .papertab{
-    margin-top: 0%;
-    color: #888888;
-    font-size: 15px;
-    white-space: pre-line;
-    text-align: left;
-    font-family: 'Cutive Mono', monospace;
-    
-  }
-
-  .aboutmetab:hover,.resumetab:hover, .projecttab:hover, .contacttab:hover, .papertab:hover{
-    color: #E6E6E6;
-  }
-
-  .link > .aboutmetab,.link > .resumetab, .link > .projecttab,.link > .papertab,.link > .contacttab{
-    color: #E6E6E6;
-    font-family: 'Cutive Mono', monospace;
-  }
-  .smallresumetab,.smallcontacttab, .smallpapertab, .smallprojectab, .smallaboutmetab{
-    visibility: hidden;
-  }
-  }
-
+ 
 
 
     
@@ -111,5 +88,28 @@
         font-family: 'Cutive Mono', monospace;
       }
     }
-    
+    @media screen and (min-width:745px) {
+      .aboutmetab,.resumetab, .projecttab, .contacttab, .papertab{
+      margin-top: 0%;
+      color: #888888;
+      font-size: 15px;
+      white-space: pre-line;
+      text-align: left;
+      font-family: 'Cutive Mono', monospace;
+      
+    }
+  
+    .aboutmetab:hover,.resumetab:hover, .projecttab:hover, .contacttab:hover, .papertab:hover{
+      color: #E6E6E6;
+    }
+  
+    .link > .aboutmetab,.link > .resumetab, .link > .projecttab,.link > .papertab,.link > .contacttab{
+      color: #E6E6E6;
+      font-family: 'Cutive Mono', monospace;
+    }
+    .smallresumetab,.smallcontacttab, .smallpapertab, .smallprojectab, .smallaboutmetab{
+      visibility: hidden;
+    }
+    }
+  
     li { padding: 0px 0px; }
