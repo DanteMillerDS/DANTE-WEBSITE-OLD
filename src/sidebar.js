@@ -24,7 +24,7 @@ const Sidebar = () => {
       <style>
         @import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Darker+Grotesque:wght@600&family=Cutive+Mono&family=Sacramento&display=swap');
       </style>
-      <CDBSidebar className="DBSsidebar" breakpoint={745} textColor="#fff" backgroundColor="#1A1A1A"  >
+      <CDBSidebar className="DBSsidebar" breakpoint={745} textColor="#fff" backgroundColor="#000000cf"  >
         <CDBSidebarHeader>
         <div className="image-position">
         <ReactRoundedImage image={FaceImage} 
