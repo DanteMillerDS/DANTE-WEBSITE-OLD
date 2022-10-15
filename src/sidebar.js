@@ -15,7 +15,7 @@ import './sidebar.css'
 import {FaBookOpen,FaHeart} from "react-icons/fa";
 import { AiFillLinkedin, AiOutlineMail,AiOutlineTwitter,AiFillContacts, AiFillProject} from "react-icons/ai";
 import { GoMarkGithub } from "react-icons/go";
-
+import {IoIosPaper} from "react-icons/io"
 
 const Sidebar = () => {
   return (
@@ -82,7 +82,7 @@ const Sidebar = () => {
                       (isActive ? "link" : "")} to="/paper" 
             >
               <CDBSidebarMenuItem className = "papertab">
-                <AiFillProject /> Papers
+                <IoIosPaper /> Papers
               </CDBSidebarMenuItem>
             </NavLink>
             </li>
