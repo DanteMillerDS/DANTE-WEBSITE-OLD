@@ -1,3 +1,5 @@
+
+
 .image-position {
     display: flex;
     justify-content: left;
@@ -33,19 +35,6 @@
     color: #E6E6E6;
   }
 
-  .aboutmetab,.resumetab, .projecttab, .contacttab, .papertab{
-    margin-top: 0%;
-    color: #888888;
-    font-size: 15px;
-    white-space: pre-line;
-    text-align: left;
-    font-family: 'Cutive Mono', monospace;
-  }
-
-  .aboutmetab:hover,.resumetab:hover, .projecttab:hover, .contacttab:hover, .papertab:hover{
-    color: #E6E6E6;
-  }
-
   .contactinfo{
     text-align: center;
   }
@@ -70,9 +59,57 @@
     color:rgb(241, 74, 74);
   }
 
+  
+
+  @media screen and (min-width:745px) {
+    .aboutmetab,.resumetab, .projecttab, .contacttab, .papertab{
+    margin-top: 0%;
+    color: #888888;
+    font-size: 15px;
+    white-space: pre-line;
+    text-align: left;
+    font-family: 'Cutive Mono', monospace;
+    
+  }
+
+  .aboutmetab:hover,.resumetab:hover, .projecttab:hover, .contacttab:hover, .papertab:hover{
+    color: #E6E6E6;
+  }
+
   .link > .aboutmetab,.link > .resumetab, .link > .projecttab,.link > .papertab,.link > .contacttab{
     color: #E6E6E6;
     font-family: 'Cutive Mono', monospace;
   }
+  .smallresumetab,.smallcontacttab, .smallpapertab, .smallprojectab, .smallaboutmetab{
+    visibility: hidden;
+  }
+  }
 
-  
+
+
+    
+    @media screen and (max-width:745px) {
+      .aboutmetab,.resumetab,.contacttab,.papertab,.projecttab{
+        visibility: hidden;
+      }
+      .smallresumetab,.smallcontacttab, .smallpapertab, .smallprojectab, .smallaboutmetab{
+        margin-top: 0%;
+        color: #888888;
+        font-size: 10px;
+        white-space: pre-line;
+        text-align: center;
+        font-family: 'Cutive Mono', monospace;
+        
+      }
+    
+      .smallresumetab:hover,.smallcontacttab:hover, .smallpapertab:hover, .smallprojectab:hover, .smallaboutmetab:hover{
+        color: #E6E6E6;
+      }
+    
+      .link > .smallresumetab,.link > .smallpapertab, .link > .smallcontacttab,.link > .smallprojectab,.link > .smallaboutmetab{
+        color: #E6E6E6;
+        font-family: 'Cutive Mono', monospace;
+      }
+    }
+    
+    li { padding: 0px 0px; }

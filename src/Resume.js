@@ -7,7 +7,7 @@ return(
     <h1 className="title"> 
       Resume
     </h1>
-    <object height="1000" data={ResumePDF} type="application/pdf" width="960">
+    <object className="resumepdf" height="1000" data={ResumePDF} type="application/pdf" width="960">
         <a href={ResumePDF} >Do not have the proper PDF plugin so download to view resume</a>
     </object>
   </div>

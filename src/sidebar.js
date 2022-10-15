@@ -20,11 +20,11 @@ import {IoIosPaper} from "react-icons/io"
 const Sidebar = () => {
   return (
     
-    <div className='sideBar'  style={{ position:'fixed', height: "100%", bottom:"0%", zIndex:"2"}}>
+    <div className='sideBar'  style={{ position:'fixed',height: "100%", bottom:"0%", zIndex:"2"}}>
       <style>
         @import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Darker+Grotesque:wght@600&family=Cutive+Mono&family=Sacramento&display=swap');
       </style>
-      <CDBSidebar textColor="#fff" backgroundColor="#1A1A1A" className="DBSsidebar" >
+      <CDBSidebar className="DBSsidebar" breakpoint={745} textColor="#fff" backgroundColor="#1A1A1A"  >
         <CDBSidebarHeader>
         <div className="image-position">
         <ReactRoundedImage image={FaceImage} 
@@ -35,9 +35,6 @@ const Sidebar = () => {
           hoverColor="#E6E6E6"
           />
         </div>
-      
-    
-
 
           <div className = "name">
             Dante Miller
@@ -55,6 +52,9 @@ const Sidebar = () => {
             <li>
             <NavLink className={({ isActive }) => 
                       (isActive ? "link" : "")} to="/aboutme" >
+              <li className = "smallaboutmetab">
+              <BsFillPersonFill /> About Me
+              </li>
               <CDBSidebarMenuItem className = "aboutmetab"> 
                 <BsFillPersonFill /> About Me
               </CDBSidebarMenuItem>
@@ -63,6 +63,9 @@ const Sidebar = () => {
             <li>
             <NavLink className={({ isActive }) => 
                       (isActive ? "link" : "")} to="/resume" >
+              <li className = "smallresumetab">
+              <FaBookOpen /> Resume
+              </li>
               <CDBSidebarMenuItem  className = "resumetab">
                 <FaBookOpen /> Resume
                 </CDBSidebarMenuItem>
@@ -72,6 +75,9 @@ const Sidebar = () => {
             <NavLink className={({ isActive }) => 
                       (isActive ? "link" : "")} to="/project" 
             >
+              <li className = "smallprojectab">
+              <AiFillProject /> Projects
+              </li>
               <CDBSidebarMenuItem className = "projecttab">
                 <AiFillProject /> Projects
               </CDBSidebarMenuItem>
@@ -81,14 +87,21 @@ const Sidebar = () => {
             <NavLink className={({ isActive }) => 
                       (isActive ? "link" : "")} to="/paper" 
             >
+              <li className = "smallpapertab">
+              <IoIosPaper /> Papers
+              </li>
               <CDBSidebarMenuItem className = "papertab">
                 <IoIosPaper /> Papers
               </CDBSidebarMenuItem>
             </NavLink>
             </li>
             <li>
+            
             <NavLink className={({ isActive }) => 
                       (isActive ? "link" : "")} to="/contact" >
+              <li className = "smallcontacttab">
+              <AiFillContacts /> Contact
+              </li>
               <CDBSidebarMenuItem className = "contacttab">
                 <AiFillContacts /> Contact
               </CDBSidebarMenuItem>

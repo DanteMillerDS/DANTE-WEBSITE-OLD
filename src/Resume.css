@@ -1,16 +1,59 @@
-.resume{
-    position: relative;
-    text-align: left;
-    padding-left:300px;
-    font-size: 1.2vw;
-    top: 15%;
-    overflow: auto;
-    color: rgb(175, 175, 175);
-    margin-bottom: -10%;
-    font-family: 'Crimson Text', serif;
-}
-.title{
-    font-size: 2vw;
-    padding-bottom: 20px;
-  }
+@media screen and (min-width:720px) {
+    .resume {
+        position: relative;
+        text-align: left;
+        padding-left:300px;
+        font-size: 3.0vh;
+        top: 15%;
+        overflow: auto;
+        color: rgb(175, 175, 175);
+        margin-bottom: -10%;
+        width: 100%;
+        font-family: 'Crimson Text', serif;
+      }
+    
+      .title{
+        font-size: 4.0vh;
+        padding-bottom: 20px;
+      }
+    }
+    
+    @media screen and (max-width:720px) {
+      .resume {
+        position: relative;
+        text-align: left;
+        padding-left:100px;
+        font-size: 3.0vh;
+        top: 15%;
+        overflow: auto;
+        color: rgb(175, 175, 175);
+        margin-bottom: -10%;
+        width: 100%;
+        font-family: 'Crimson Text', serif;
+      }
+    
+      .title{
+        font-size: 4.0vh;
+        padding-bottom: 20px;
+      }
+    }
 
+
+    @media screen and (max-width:1325px){
+        .resumepdf{
+            height: 800px;
+            width:800px
+        }
+    }
+
+    
+
+
+    @media screen and (max-width:500px){
+        .resumepdf{
+            height: 500px;
+            width:400px
+        }
+    }
+
+   
