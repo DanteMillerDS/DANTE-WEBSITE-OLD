@@ -1,4 +1,4 @@
-@media screen and (min-width:720px) {
+@media screen and (min-width:745px) {
 .paper {
     position: relative;
     text-align: left;
@@ -18,7 +18,7 @@
   }
 }
 
-@media screen and (max-width:720px) {
+@media screen and (max-width:745px) {
   .paper {
     position: relative;
     text-align: left;
