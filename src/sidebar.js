@@ -112,8 +112,8 @@ const Sidebar = () => {
     <div className='contactinfo' >
       <a className="spotifylink" href="https://open.spotify.com/user/7hxmupd8fl2k1ztjtk8jmz9n4"><BsSpotify /></a> 
       <a className="githublink" href='https://github.com/dantemillerds' ><GoMarkGithub /></a>
-      <a className="twitterlink" href='https://twitter.com/dmill666'><AiFillLinkedin /></a>
-      <a className="linkedinlink" href='https://www.linkedin.com/in/dante-miller-1a9396228/'><AiOutlineTwitter /></a>
+      <a className="twitterlink" href='https://twitter.com/dmill666'><AiOutlineTwitter /></a>
+      <a className="linkedinlink" href='https://www.linkedin.com/in/dante-miller-1a9396228/'><AiFillLinkedin /></a>
       <a className="emailink" href="javascript:location.href = 'mailto:' + ['dm85','rice.edu'].join('@')"><AiOutlineMail /></a> 
     </div>    
     <span className="createdby">
