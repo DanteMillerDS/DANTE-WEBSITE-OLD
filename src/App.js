@@ -34,8 +34,9 @@ function App() {
       left: 0,
       width: '100%',
       height: '100%',
-      backgroundColor: 'rgba(0, 0, 0,0.5)', // Change the background color and the opacity value here
+      backgroundColor: 'rgba(0, 0, 0,0.7)', // Change the background color and the opacity value here
     }}>
+    
   </div>
       
       <style>
