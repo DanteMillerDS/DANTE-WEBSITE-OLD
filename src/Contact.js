@@ -7,7 +7,7 @@ return(
       Contact
     </h1>
     <p className="text">
-    If you have any questions, please feel free to contact me. You can find links to my Github, Twitter, LinkedIn and Email in the bottom left corner. I am interested in any summer internship opportunities relating to software development, computational biology, machine learning, data engineering or data science.
+    Please do not hesitate to reach out to me if you have any inquiries. My contact details, including links to my Github, LinkedIn, and email, can be found in the bottom left corner. I am currently seeking summer internship opportunities in the fields of software development and data science, with a particular focus on medical informatics. I would welcome the chance to discuss any relevant positions or projects with you.
     </p>
   </div>
 

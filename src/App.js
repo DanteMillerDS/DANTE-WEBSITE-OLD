@@ -9,7 +9,6 @@ import Project from './Project';
 import Paper from './Paper';
 import Contact from './Contact';
 import Playbar from './playbar';
-import { SpotifyNowPlaying } from './SpotifyNowPlaying';
 
 function App() {
   
@@ -17,12 +16,27 @@ function App() {
     
     <Router>
       
-    <div className="App" id="bg" style={{ 
-      backgroundImage: `url(${BackgroundImage})`,
-      backgroundRepeat: 'repeat',
-      backgroundPosition: 'center',
-      backgroundSize: "60%",
-     }}>
+      <div 
+    className="App" 
+  id="bg" 
+  style={{ 
+    backgroundImage: `url(${BackgroundImage})`,
+    backgroundRepeat: 'repeat',
+    backgroundPosition: 'center',
+    backgroundSize: '60%',
+    position: 'relative',
+  }}>
+  <div 
+    className="overlay" 
+    style={{ 
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      width: '100%',
+      height: '100%',
+      backgroundColor: 'rgba(0, 0, 0,0.5)', // Change the background color and the opacity value here
+    }}>
+  </div>
       
       <style>
         @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
